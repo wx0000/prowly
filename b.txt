@@ -1,0 +1,19 @@
+Feature: Using "copilot" in bing.com search to gather information about media monitoring module in Prowly
+
+  Scenario: Using "copilot" to search for Prowly media monitoring module
+    Given I am on the bing.com homepage
+    When I click the "copilot" button
+    And I say "search for media monitoring module in Prowly"
+    Then I should see the search results page
+
+  Scenario: Using "copilot" to find out how to use Prowly media monitoring module
+    Given I am on the bing.com homepage
+    When I click the "copilot" button
+    And I say "how to use media monitoring module in Prowly"
+    Then I should see the search results page
+
+  Scenario: Using "copilot" to compare Prowly media monitoring module with other similar products
+    Given I am on the bing.com homepage
+    When I click the "copilot" button
+    And I say "compare media monitoring module in Prowly with other similar products"
+    Then I should see the search results page
