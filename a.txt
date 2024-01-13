@@ -1,0 +1,25 @@
+Feature: Search for "Prowly Media Monitoring" on bing.com with content category filtering
+
+  Scenario: Search for "Prowly Media Monitoring" with all content categories
+    Given I am on the bing.com homepage
+    When I enter "Prowly Media Monitoring" in the search bar
+    And I click the search button
+    And I click the "All" dropdown menu
+    And I select "All"
+    Then I should see the search results page
+
+  Scenario: Search for "Prowly Media Monitoring" with news content category
+    Given I am on the bing.com homepage
+    When I enter "Prowly Media Monitoring" in the search bar
+    And I click the search button
+    And I click the "All" dropdown menu
+    And I select "News"
+    Then I should see the search results page
+
+  Scenario: Search for "Prowly Media Monitoring" with video content category
+    Given I am on the bing.com homepage
+    When I enter "Prowly Media Monitoring" in the search bar
+    And I click the search button
+    And I click the "All" dropdown menu
+    And I select "Videos"
+    Then I should see the search results page
